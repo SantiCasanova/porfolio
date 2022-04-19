@@ -1,0 +1,65 @@
+.container {
+  height: 450px;
+  width: 74%;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-image: url('./waveBackground.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.title {
+  font-size: 38px;
+  cursor: default;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+
+.skills {
+  margin-top: 35px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  height: 270px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+  cursor: default;
+  gap: 15px;
+}
+
+.skill {
+  text-shadow: 1px 2px 16px rgba(130, 20, 164, 0.79);
+  font-weight: 300;
+  width: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: 500px;
+    padding: 30px;
+    background-image: url('./waveBackground3.svg');
+  }
+
+  .title {
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
+  .skills {
+    margin-top: 25px;
+    margin-left: 5px;
+    width: 300px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills {
+    width: 240px;
+  }
+}

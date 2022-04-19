@@ -1,0 +1,32 @@
+{
+  "header": {
+    "contact-me": "Contactame"
+  },
+  "presentation": {
+    "title": "Hola, me llamo Santiago Casanova",
+    "description": "Frontend developer en constante crecimiento. Apasionado por el desarrollo web y la tecnología."
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "reactJS": "React JS, Desarrollo de aplicaciones web",
+    "typescript-first": "Fundamentos de TypeScript",
+    "typescript-second": "TypeScript: Programación Orientada a Objetos y Asincronismo",
+    "typescript-third": "TypeScript: Tipos Avanzados y Funciones"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "work": {
+      "position": "Desarrollador Frontend",
+      "time": "mar. 2021 - feb. 2022",
+      "description": "Tuve la oportunidad de trabajar en diferentes proyectos como Junior Frontend Developer aplicando la metodología Scrum, usando Vue.js como framework y Git como controlador de versiones entre muchas otras herramientas."
+    },
+    "practice": {
+      "title": "Prácticas",
+      "urlTitle": "Clon de Amazon",
+      "description": "Me inspiré en el famoso ecommerce Amazon para realizar una práctica desafiante, con pasarela de pagos, autenticación de usuarios, carrito de compras y demás características que me permitieran poner a prueba mis conocimientos."
+    }
+  }
+}

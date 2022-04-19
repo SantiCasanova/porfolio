@@ -1,0 +1,91 @@
+.container {
+  height: 450px;
+  width: 74%;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-image: url('./waveBackground2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+  font-size: 38px;
+  cursor: default;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 10px;
+}
+
+.certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+  height: 240px;
+  width: 500px;
+  cursor: default;
+  margin-top: 35px;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.certification {
+  text-shadow: 1px 2px 16px rgba(130, 20, 164, 0.79);
+  font-weight: 300;
+  color: #9800a3;
+  font-style: italic;
+  width: auto;
+}
+
+@media screen and (max-width: 1275px) {
+  .certification {
+    width: 80%;
+  }
+
+  .certifications {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .certification {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-position-x: -200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: 500px;
+    padding: 30px;
+    background-image: url('./waveBackground3.svg');
+    background-position-x: -200px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .certifications {
+    gap: 15px;
+    width: 450px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .certifications {
+    width: 320px;
+  }
+}

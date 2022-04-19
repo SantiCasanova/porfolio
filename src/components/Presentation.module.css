@@ -1,0 +1,153 @@
+.container {
+  height: calc(100vh - 165px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 25px;
+  gap: 10em;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.linkedInLogo {
+  width: auto;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.githubLogo {
+  width: auto;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.photo {
+  height: 475px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 20px 20px 0px 1px rgba(192, 192, 192, 0.144);
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 475px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 38px;
+  width: 500px;
+  font-weight: 700;
+}
+
+.description {
+  width: 500px;
+  height: auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 28px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1130px) {
+  .container {
+    gap: 5em;
+    height: calc(80vh - 165px);
+  }
+
+  .photo {
+    height: 400px;
+  }
+
+  .rightSide {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    height: 55vh;
+  }
+
+  .photo {
+    height: 350px;
+  }
+
+  .rightSide {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100vh;
+    width: 768px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 100vh;
+    width: 380px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    margin-top: -30px;
+  }
+
+  .photo {
+    height: 40%;
+  }
+
+  .rightSide {
+    height: 300px;
+    width: 300px;
+    text-align: start;
+  }
+
+  .title {
+    width: 300px;
+    font-size: 30px;
+  }
+
+  .description {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .socialMedia {
+    gap: 15px;
+  }
+
+  .linkedInLogo {
+    height: 25px;
+  }
+
+  .githubLogo {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    height: 100vh;
+    width: 320px;
+  }
+
+  .photo {
+    margin-top: 0px;
+    height: 40%;
+  }
+}

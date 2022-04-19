@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+
+.languageBtn {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 24px;
+  margin-left: 45px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+.languageBtn span:hover {
+  color: rgb(136, 136, 136);
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 14px 24px;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 45px;
+  border: 1px solid white;
+}
+
+button span {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+button .liquid {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #4a0050;
+  transition: 0.5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+button .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .languageBtn {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .button {
+    margin-right: 25px;
+    padding: 10px 20px;
+    z-index: 3;
+  }
+
+  .header {
+    width: 100%;
+    height: 80px;
+  }
+
+  button .liquid {
+    top: -50px;
+  }
+}
