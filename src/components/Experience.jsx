@@ -14,7 +14,7 @@ function Experience() {
             {t('experience.work.position')}
           </span>
           <span className={`${styles.sectionInfo} ${styles.timeWorked}`}>
-            mar. 2021 - feb. 2022
+            mar. 2020 - abr. 2022
           </span>
           <span className={styles.sectionDescription}>
             {t('experience.work.description')}
